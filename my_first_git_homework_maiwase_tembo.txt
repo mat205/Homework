@@ -1,0 +1,18 @@
+GIT WORKFLOW FUNDAMENTALS
+• Working Directory: umberella term for files and folders
+• Staging Area: files that are going to be a part of the next commit, which lets git know what changes in the file are going to occur for the next commit.
+• Local Repo (head): head local repo is the place we are actively making changes to our code and is typically housed on the computer.
+• Remote repo (master): repository on the server that has the primary version of source code
+
+
+WORKING DIRECTORY STATES:
+• Staged:one of three places that code can be stored but is between the orking directory and repository
+• Modified: when the working directory experiences changes
+• Committed: when the working directory changes are saved
+
+GIT COMMANDS:
+• Git add: Adds a new file to your staging area• Git commit
+• Git push: Pushes local repository changes to your hosting service
+• Git fetch: fetches from either a single named repository or URL, or from several repositories at once
+• Git merge: combines multiple sequences of commits into one 
+• Git pull: fetches and downloads content from a remote repository and immediately updates the local repository to match 
