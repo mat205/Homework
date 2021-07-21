@@ -1,0 +1,995 @@
+THEORY QUESTIONS ASSIGNMENT
+Python based theory
+
+To be completed at student’s own pace and submitted before given deadline
+
+
+
+
+
+
+
+What is Python and what are its main features?
+It is a programming language that includes features such as 
+-Object oriented programming
+-Free and open source
+-A portable language
+-an interpreted language
+-Large standard library
+-Dynamic
+
+Discuss the difference between Python 2 and Python 3
+
+In Python 2, an implicit str type is ASCII and  in Python 3.x implicit str type is Unicode. 
+
+What is PEP 8?
+Style Guide for Python Code created by the Python Software Foundation 
+
+In computing / computer science what is a program?
+an iterable set of code
+
+In computing / computer science what is a process?
+an instance of a computer program that is being executed 
+
+In computing / computer science what is cache?
+a small amount of memory which is a part of the CPU that is used to temporarily hold instructions and data that the CPU is likely to reuse.
+
+
+In computing / computer science what is a thread and what do we mean by multithreading?
+A programming and execution model that allows multiple threads to exist within the context of one process where they can share a process’s resources but can execute independently
+
+
+In computing / computer science what is concurrency and parallelism and what are the differences?
+Concurrency is when 2 or more tasks can start, run and complete in overlapping time periods
+
+Parallelism is when tasks run at the same time
+
+What is GIL in Python and how does it work?
+It is a a single lock on the interpreter itself which adds a rule that execution of any python bytecode requires acquiring the interpreter
+
+What do these software development principles mean: DRY, KISS, BDUF
+
+DRY: Do not repeat yourself (make the code better)
+KISS: Keep it simple stupid (don’t complicate the code)
+BDUF: Big design upfront(write the code and check it early)
+
+What is a Garbage Collector in Python and how does it work?
+An algorithm used to deallocate objects which are no longer needed that runs during program execution and is triggered when an object's reference count reaches zero
+
+How is memory managed in Python?
+Python has a private heap containing all python objects and data structures. The memory manager has object-specific allocators for strings, ints etc. It also manages blocks which are 256 kB memory chunks allocaked as 64 pools per heap.
+Stack memory is created whenever methods and variables are returned.
+What is a Python module?
+a file containing python definitions and statements or defining functions, classes, and variables or containing runnable code
+
+What is docstring in Python?
+Python docstrings are the string literals that appear right after the definition of a function, method, class, or module. 
+
+What is pickling and unpickling in Python? Example usage.
+process converting a Python object  into a byte stream, and “unpickling” is the reverse
+
+What are the tools that help to find bugs or perform static analysis?
+Pychecker and Pylint
+
+How are arguments passed in Python by value or by reference? Give an example.
+Python passes arguments by assignment.
+
+Example:
+def main():
+    arg = 1
+    square(arg)
+    print(arg)
+
+Output: 1
+
+
+
+
+What are Dictionary and List comprehensions in Python? Provide examples.
+List comprehensions are creates a new list based on the values of an existing list
+Example:
+Dictionary comprehensions are like lists from an iterable or transform one dictionary into another.
+Example:
+
+What is namespace in Python?
+A collection of currently defined symbolic names along with information about the object that each name references
+
+What is pass in Python?
+a null statement that is is not ignored but has nothing happen regardless
+
+What is unit test in Python?
+Testing units of source code to see if they are fit to be used
+
+In Python what is slicing?
+Slicing  accesses parts of sequences like strings, tuples, and lists.
+
+What is a negative index in Python?
+Used for two things:
+Used to remove any new-line spaces from the string and allow the string to except the last character that is given
+Also used to show the index to represent the string in correct order.
+
+How can the ternary operators be used in python? Give an example.
+To execute code based on whether an expression is true or false
+Uses the expression : [if_true] if [expression] else [if_false]
+​​a = 1, b = 2
+max = a if a > b else b 
+print(max)
+Output = 2
+
+What does this mean: *args, **kwargs? And why would we use it?
+**kwargs is used to pass a keyworded, variable-length argument list and *args passes non keyword arguments
+
+How are range and xrange different from one another?
+range() returns a list and can use all the operations that can be applied to a list. xrange() returns the xrange object but operations associated to list cannot be applied on them
+
+What is Flask and what can we use it for?
+Flask is a web application framework
+
+What are clustered and non-clustered index in a relational database?
+Clustered index is data stored in a sorted order and the opposite is a non-clustered index which is also described as a logical order of index that does not match physical stored order of the rows on disk. Used to build websites and web apps 
+
+What is a ‘deadlock’ a relational database?
+when two or more transactions are waiting for one another to give up locks
+
+What is a ‘livelock’ a relational database?
+When a request for an exclusive lock is denied repeatedly, as many overlapping shared locks keep on interfering with each other. so that they keep on changing their status, such that it prevents them from completing the task. 
+
+
+
+
+
+
+
+METHOD
+
+DESCRIPTION
+
+EXAMPLE
+
+capitalize()
+Makes the first letter upper case
+txt = "Wase"
+
+x = txt.capitalize()
+
+print (x)
+
+Output: Wase
+
+casefold()
+converts string to lowercase
+txt = "WASE"
+
+x = txt.capitalize()
+
+print (x)
+
+Output: wase
+
+center()
+returns a centered string
+txt = "WASE"
+
+x = txt.capitalize()
+
+print (x)
+
+Output:     WASE
+
+count()
+Returns the number of times a specified value occurs in a string
+txt = "WASE"
+
+x = txt.count(a)
+
+print (x)
+
+Output: 1
+
+endswith()
+Returns true if the string ends with the specified value
+txt = "WASE"
+
+x = txt.endswith(“.”)
+
+print (x)
+
+Output: True
+
+find()
+Searches the string for a specified value and returns the position of where it was found
+txt = "Wase was here"
+
+x = txt.find(Wase)
+
+print (x)
+
+Output:1   
+
+format()
+formats specified values in a string
+x = format(0.1,’%’)
+
+print (x)
+
+Output:10.000000%
+
+
+
+index()
+searches for a specified value and returns the position of where it was found
+txt = "Wase was here"
+
+x = txt.index(“Wase”)
+
+print (x)
+
+Output:1
+
+isalnum()
+Returns True if all characters in the string are alphanumeric
+txt = "Wase was here"
+
+x = txt.isalnum()
+
+print (x)
+
+Output:True
+
+
+
+
+
+isalpha()
+Returns true if all the characters in the strung are alphanumeric
+txt = "Wase was here"
+
+x = txt.isalpha()
+
+print (x)
+
+Output:True
+
+isdigit()
+Returns true if all the characters in the string are digits
+txt = "Wase was here"
+
+x = txt.isdigit()
+
+print (x)
+
+Output:True
+
+islower()
+returns true if all characters in a string are lowercase
+txt = "Wase was here"
+
+x = txt.islower()
+
+print (x)
+
+Output:True
+
+isnumeric()
+Returns true if all characters in a string are numeric
+txt = "Wase was here"
+
+x = txt.isnumeric()
+
+print (x)
+
+Output:False
+
+isspace()
+Returns true if all characters in a string are whitespaces
+txt = "Wase was here"
+
+x = txt.isspace()
+
+print (x)
+
+Output:False
+
+istitle()
+Returns true if the string follows the rules of a title
+xt = "Wase was here"
+
+x = txt.istitle()
+
+print (x)
+
+Output:False
+
+isupper()
+Returns True if all characters in the string are upper case
+txt = "Wase was here"
+
+x = txt.isupper()
+
+print (x)
+
+Output:False
+
+join()
+Joins the elements of iterable to the end of the string
+
+
+
+lower()
+Converts a string into lower case
+txt = "Wase was here"
+
+x = txt.isupper()
+
+print (x)
+
+Output:wase was here
+
+lstrip()
+Returns a left trim version of the string
+txt = ",,,,,ssaaww.....wase"
+
+x = txt.lstrip(",.asw")
+
+print(x)
+
+Output: wase
+
+replace()
+Returns a string where a specified value is replaced with a specified value
+txt = "Wase was here"
+
+x = txt.replace(“Wase”, “Tembo:)
+
+print (x)
+
+Output:Tembo was here
+
+rsplit()
+Splits the string at the specified separator, and returns a list
+txt = "Wase was here"
+
+x = txt.rsplit(“,”)
+
+print (x)
+
+Output:[‘Wase’,’was’, ‘here’]
+
+rstrip()
+Returns a right trim version of the string
+txt = "wase,,,,,ssqqqww....."
+
+x = txt.rstrip(",.qsw")
+
+print(x)
+
+Output:wase
+
+split()
+Splits the string at the specified separator, and returns a list
+txt = "Wase was here"
+
+x = txt.split()
+
+print (x)
+
+Output:[‘Wase’,’was’, ‘here’]
+
+splitlines()
+Splits the string at line breaks and returns a list
+txt = "Wase was here\nMaiwase was not"
+
+x = txt.splitlines()
+
+print(x)
+
+Output:[‘Wase was her’, ‘Maiwase was not’]
+
+startswith()
+Returns true if the string starts with the specified value
+txt = "Wase was here"
+
+x = txt.startswith("Wase")
+
+print(x)
+
+Output:True
+
+strip()
+Returns a trimmed version of the string
+txt = "   Wase was here   "
+
+x = txt.strip()
+print(x)
+
+Output: Wase was here
+
+
+
+
+swapcase()
+Swaps cases, lower case becomes upper case and vice versa
+txt = "Wase was here"
+
+x = txt.swapcase()
+
+print(x)
+Output:wASE WAS HERE
+
+
+
+
+
+title()
+Converts the first character of each word to uppercase
+txt = "Wase was here"
+
+x = txt.title()
+
+print(x)
+Output: Wase Was Here
+
+upper()
+Converts a string into upper case
+txt = "Wase was here"
+
+x = txt.upper()
+
+print(x)
+
+Output: WASE WAS HERE
+
+
+
+
+
+
+
+
+
+
+Method
+
+Description
+
+Example
+
+append()
+adds element to the end of the list
+x = [“w”, “a”, “s”, “e”]
+x.append("e")
+
+print(x)
+
+Output: [w', 'a', 's', ‘e’]
+
+clear()
+Removes all elements from a specified list
+x = [“w”, “a”, “s”, “e”]
+x.clear()
+
+print(x)
+
+Output: []
+
+copy()
+Returns a copy of a list
+x = [“w”, “a”, “s”, “e”]
+x.copy()
+
+print(x)
+
+Output: [w', 'a', 's', ‘e’]
+
+
+
+count()
+Returns the number of elements with the specified value
+x = [“w”, “a”, “s”, “e”]
+x.count(“w”)
+
+print(x)
+
+Output: 1
+
+extend()
+Adds elements of a list to the end of the current list
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+y = [‘t’]
+x.extend()
+
+print(x)
+
+Output: [w', 'a', 's', ‘e’, ‘t’]
+
+index()
+Returns the index of the first element with the specified value
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.index(‘w’)
+
+print(x)
+
+Output: 0
+
+insert()
+adds an element at the specified position
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.insert(0,‘w’)
+
+print(x)
+
+Output: [‘w’,‘w', 'a', 's', ‘e’]
+
+
+
+pop()
+Removes the element at the specified position
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.pop(0)
+
+print(x)
+
+Output: ['a', 's', ‘e’]
+
+remove()
+Removes the first item with the specified value
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.remove(“w”)
+
+print(x)
+
+Output: ['a', 's', ‘e’]
+
+reverse()
+Reverses the order of a list
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.reverse()
+
+print(x)
+
+Output: [‘e’,’s’, ‘a’,’w’]
+
+sort()
+Sorts the list alphabetically
+x = [‘w’, ‘a’, ‘s’, ‘e’]
+
+x.sort()
+
+print(x)
+
+Output: [‘a’, ‘e’, ‘s’, ’w’]
+
+
+
+
+
+
+
+
+
+
+
+Method
+
+Description
+
+Example
+
+count()
+Returns the number of times a specified value occurs in a tuple
+thistuple = (1,1,1,1)
+
+x = thistuple.count(1)
+
+print(x)
+
+Output: 4
+
+index()
+Searches 
+thistuple = (1,1,1,1)
+
+x = thistuple.count(1)
+
+print(x)
+
+Output: 1
+
+
+
+
+
+
+
+Method
+
+Description
+
+Example
+
+clear()
+Removes all elements from a specified dictionary
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+
+subjectGrade.clear()
+
+print(subjectGrade)
+
+Output: {}
+
+
+
+copy()
+Returns a copy of a specified dictionary
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+
+subjectGrade.clear()
+
+print(subjectGrade)
+
+Output: {"English": "A", "French": "A", "Overall": 100
+}
+
+fromkeys()
+Returns a dictionary with specified keys and values
+x = ('w', 'a', 's')
+y = 0
+
+xdict = dict.fromkeys(x, y)
+
+
+print(xdict)
+
+Output:
+['w':0, 'a':0, 's': 0}
+
+get()
+Returns the value of a specified key
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+
+subjectGrade.get(“French”)
+
+print(subjectGrade)
+
+Output: A
+
+
+
+items()
+Returns a tuple list for each key value pair
+subjectGrade=	{
+  "English": "A”
+}
+
+x = subjectGrade.items()
+
+print(x)
+
+Output: [(‘English’, A’)]
+
+
+
+
+keys()
+Returns a list containing a specified dictionary’s keys
+subjectGrade=	{
+  "English": "A”
+}
+
+x = subjectGrade.keys()
+
+print(x)
+
+Output: 
+dict_keys([‘English’])
+
+pop()
+Removes an element with a specified key
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+
+subjectGrade.pop(“French”)
+
+print(subjectGrade)
+
+Output: 
+{‘English’: ‘A’,
+  ‘year: 100}
+
+popitem()
+Removes the last inserted key-value pair
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+subjectGrade.popitem()
+
+print(subjectGrade)
+
+Output: 
+{‘English’: ‘A’,
+  ‘French: ‘A’}
+
+
+
+
+
+
+
+
+setdefault()
+Returns the value of a specified key
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+subjectGrade.setdefault(“English”)
+
+print(subjectGrade)
+
+Output: 
+A
+
+update()
+Updates dictionary with specified key-value
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+subjectGrade.update({“Spanish”: “A”})
+
+print(subjectGrade)
+
+Output: 
+{‘English’: ‘A’,
+  ‘French: ‘A’, ‘Spanish’: ‘A’}
+
+
+
+values()
+Returns a list of values in the dictionary
+subjectGrade=	{
+  "English": "A",
+  "French": "A",
+  "Overall": 100
+}
+subjectGrade.values()
+
+print(x)
+
+Output: 
+([ ‘A’,‘A’,‘A’]}
+
+
+
+
+
+
+Method
+
+Description
+
+Example
+
+add()
+used to add an element to a specified set
+set = {"w", "a", "s"}
+
+set.add("e")
+
+print(set)
+
+Output:Wase
+
+
+
+
+clear()
+removes all elements from a specified set
+set = {"w", "a", "s", “e”}
+set.clear()
+print (set)
+
+Output: set()
+
+
+
+copy()
+returns a copy of specified set
+set = {"w", "a", "s", “e”}
+x= set.copy()
+print(x)
+
+Output: {"w", "a", "s", “e”}
+
+
+
+difference()
+returns a set showing the difference between two or more specified sets 
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z = x.difference(y) 
+
+print(z)
+
+Output: {"w", "a", "s", “e”}
+
+
+
+intersection()
+returns a set that is an intersection of the specified sets
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z = x.intersection(y) 
+
+print(z)
+
+Output: {}
+
+issubset()
+returns whether a set is a subset of  a specified set or not
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z = x.subset(y) 
+
+print(z)
+
+Output: False
+
+issuperset()
+returns whether a set is a contains a specified set or not
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z = x.superset(y) 
+
+print(z)
+
+Output: False
+
+pop()
+removes an element from a set
+x = {"w", "a", "s", “e”}
+
+x.pop() 
+
+print(x)
+
+Output: {"w", "a", "s"}
+
+remove()
+removes a specified  element
+x = {"w", "a", "s", “e”}
+
+x.remove(“e”) 
+
+print(x)
+
+Output: {"w", "a", "s"}
+
+symmetric_differ ence()
+inserts the symmetric differences from a specified set and another
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z.symmetric_difference(x) 
+
+print(x)
+
+Output: {"w", "a", "s", “e”, “t”, “e”, “m”, “b”, “o”}
+
+union()
+returns a set containing the union of sets
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z= x.union(y) 
+
+print(z)
+
+Output: {"w", "a", "s", “e”, “t”, “e”, “m”, “b”, “o”}
+
+
+
+
+
+update()
+updates a set with another set or another iterable
+x = {"w", "a", "s", “e”}
+y = {"t", "e", "m", “b”, “o”}
+
+z= x.update(y) 
+
+print(x)
+
+Output: {"w", "a", "s", “e”, “t”, “e”, “m”, “b”, “o”}
+
+
+
+
+
+
+Method
+
+Description
+
+Example
+
+read()
+Returns the file content
+f = open("wase.txt", "r")
+print(f.read(1))
+
+Output: Wase was here
+
+
+
+readline()
+Returns a single line from a specified file
+
+
+
+f = open("wase.txt", "r")
+print(f.readline(5))
+
+Output: 
+Wase was not here
+
+
+
+readlines()
+Returns a list of lines from a specified file
+f = open("wase.txt", "r")
+print(f.readlines(6))
+
+Output: 
+Wase was 
+
+write()
+Writes a specified string to a file
+f=  open("wase.txt", "r")
+f.write(“this is hard”))
+
+print(f.read())
+Output: 
+Wase was her
+This is hard
+
+writelines()
+Writes a specified string to a file
+f=  open("wase.txt", "r")
+f.writelines(“this is hard”, “hoping for better”))
+
+print(f.read())
+Output: 
+Wase was here
+This is hard
+hoping for better
+
+
