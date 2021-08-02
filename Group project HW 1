@@ -1,0 +1,18 @@
+1) Our data research will include music artists, albums, songs, playlists and music saved in the Spotify user libraries and the Spotify Data Catalogue. The endpoints described would be obtained as JSON data from the Spotify data catalogue.
+To access these data, our web API will access these data resources via HTTTP requests in UTF-8 format to API endpoints.
+The API request methods we will consider include GET, POST, PUT and DELETE.
+
+2) Our project will cover cover the media/entertainment industry
+
+3) The data available will allow us to answer many of the questions below:
+Who is the most streamed artist of a specific timeframe or ever?
+Which is the most streamed song of s specific time period or ever?
+Which are the most streamed albums?
+Which songs appear on user playlists the most?
+Which songs are the most saved by users?
+
+4) The data sources will include music artists, albums, songs, playlists and music saved in the Spotify user libraries and the Spotify Data Catalogue.
+
+5)Distribute workload:We will distribute workload as evenly as possible. We will have 2 people cover each task. In this case a main person and a second who wiil be a back up.
+Manage code: Our code will be housed on Github
+Planning: We will create a timeline that will detail tasks and deadlines for each task. The tasks will include research and specific steps needed too create an api
