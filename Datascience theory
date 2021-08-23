@@ -1,0 +1,64 @@
+THEORY QUESTIONS ASSIGNMENT
+Data Science Stream
+
+
+KEY NOTES
+
+•	This assignment to be completed at student’s own pace and submitted before given deadline.
+
+•	There are 10 questions in total and each question is marked on a scale 1 to 10. The maximum possible grade for this assignment is 100 points.
+
+•	Students are welcome to use any online or written resources to answer these questions.
+
+•	The answers need to be explained clearly and illustrated with relevant examples where necessary. Your examples can include code snippets, diagrams or any other evidence-based representation of your answer.
+
+
+Theory questions	10 point each
+
+1.	What does “Data Cleansing” mean? What are the best ways to practice this?
+Data cleansing involves a combination of:
+•	removing data
+•	fixing spelling and syntax errors
+•	standardizing data sets
+•	fixing missing codes and empty fields
+•	identifying duplicate records.
+
+2.	What is the difference between data profiling and data mining?
+Data profiling is examining an existing database for data quality to discover anomalies
+turn raw data into useful information
+Data mining uses mathematical algorithms to examine the data and interpret the data
+
+3.	Define Outlier with an example.
+A data point that lies abnormally outside the rest of the dataset samples
+
+4.	What is “Collaborative Filtering”?
+A method that makes automatic predictions (filtering) about the interests of a user by collecting preferences or taste information from many users (collaborating)
+
+5.	What is “Time Series Analysis”?
+Analyzes a sequence of data points collected over an interval of time
+
+6.	Explain the core steps of a Data Analysis project?
+•	Define goal
+•	Get data
+•	Clean data
+•	Enrich data
+•	Find insights  and visualize
+•	Deploy machine learning
+•	iterate
+
+7.	What are the characteristics of a good data model?
+It easily consumes the data, it’s large datasets are scalable, it has predictable performance and is adaptable
+
+8.	Explain and provide examples of univariate, bivariate, and multivariate analysis?
+Univariate, bivariate and multivariate are the analyses of a single, double and multiple variable(s), respectively
+Examples: 
+Univariate: Area = of a square with variable r
+Bivariate: BMI depends on weight and height
+Multivariate:  Volume of a rectangular solid= length x width x height
+
+9.	What is a Linear Regression?
+Linear regression utilizes  the relationship between data-points to draw a straight line through all them with the idea of being able to predict a continuous value based on its input variables. In python, this can be done using the Scipy library
+
+10.	In terms of modelling data, what do we mean by Over-fitting and Under-fitting?
+Overfitting happens when the training data model performs well on the training data but does not perform well on the evaluation data
+Underfitting happens when the training data model performs poorly on the training data.
